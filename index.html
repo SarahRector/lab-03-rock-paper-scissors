@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <span>Rock, Paper, Scissors</span>
+    </header>
+    <main>
+        <h1>Can you beat the computer at rock, paper, scissors?</h1>
+        <br>
+        <section id = 'rules'>
+            <ol>
+                <li>Click on the pictures below to enter your guess.</li>
+                <li>Press the button to see if you won or not!</li>
+                <li>Try as many times as you like!</li>
+            </ol>
+        </section>
+        <br>
+        <section id = 'buttons'>
+            <label> Rock
+                <input type = 'radio' name = 'rps' value = 'rock'/>
+                <img src = "../assets/rock2.jpg">
+            </label>
+            <label> Paper
+                <input type = 'radio' name ='rps' value = 'paper'/>
+                <img src = "../assets/paper.jpg">
+            </label>
+            <label> Scissors
+                <input type = 'radio' name = 'rps' value = 'scissors'/>
+                <img src = "../assets/scissors.jpg">
+            </label>
+            <br>
+            <button id = 'guess-button'>Play!</button>
+        </section>
+        <br>
+        <section id = 'results'>
+            <span class = 'game-results' id = 'win-lose'></span>
+            <br>
+            <span class = 'game-results' id = 'total-wins'>Total wins</span>
+            <br>
+            <span class = 'game-results' id = 'total-losses'>Total losses</span>
+            <br>
+            <span class = 'game-results' id = 'total-draws'>Total draws</span>
+            <br>
+            <span class = 'game-results' id = 'total-tries'>Total Tries</span>
+
+        </section>
+        
+    </main>
+    <footer>
+        
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
