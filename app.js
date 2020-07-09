@@ -8,29 +8,38 @@ const winOrLose = document.querySelector('#win-lose');
 const wins = document.querySelector('#total-wins');
 const losses = document.querySelector('#total-losses');
 const draws = document.querySelector('#total-draws');
+const totalTries = document.querySelector('#total-tries');
 
 // initialize state
-let randomNumber = 0;
+let randomNumber = 1;
 let winData = 0;
 let lossData = 0;
 let drawData = 0;
+let triesData = 0;
 
 // set event listeners to update state and DOM
 button.addEventListener('click', () => {
+    
+    triesData++;
+    totalTries.textContent = triesData + ' tries so far';
 
     const checkedRadio = document.querySelector('input:checked');
     const userGuess = checkedRadio.value;
 
     const computerGuess = getRandomThrow();
-    console.log(getRandomThrow(randomNumber));
+
 
     let game = checkResult(userGuess, computerGuess);
+    
+    console.log('computerGuess' + computerGuess);
+    console.log('userGuess' + userGuess);
+    console.log(game);
     if (game === 'win') {
         winOrLose.textContent = 'You Won!!!';
         winData++;
         wins.textContent = winData + ' wins';
         
-    } else if (game === 'lose') {
+    } else if (game === 'loss') {
         winOrLose.textContent = 'You lost!!!';
         lossData++;
         losses.textContent = lossData + ' losses';
@@ -40,7 +49,7 @@ button.addEventListener('click', () => {
         drawData++;
         draws.textContent = drawData + ' draws';
     }
-    console.log(drawData);
+    
 });
 
 

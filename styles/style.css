@@ -18,8 +18,8 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 
 main {
@@ -27,8 +27,30 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: calc(var(--footer-height));
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
 }
+header {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    font-weight: bold;
+    font-style: italic;
+    font-size: xx-large;
+}
+h1 {
+    font-weight: bold;
+}
+.results {
+    max-width: auto;
+    max-height: auto;
+    background-color: gray;
+}
+
 img {
     max-width: 200px;
     max-height: 200px;
@@ -39,6 +61,6 @@ input {
 }
 
 input:checked + img {
-    border: dotted 5px purple
+    border: solid 8px purple
 }
 
