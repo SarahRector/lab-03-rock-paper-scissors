@@ -10,6 +10,7 @@ export default function getRandomThrow() {
 }
 
 export function checkResult(player, computer) {
+
     if (player === 'rock' && computer === 'paper')
         return 'loss';
     if (player === 'rock' && computer === 'scissors')
@@ -28,7 +29,7 @@ export function checkResult(player, computer) {
         return 'win';
     if (player === 'scissors' && computer === 'scissors')
         return 'draw';
-    if (player === 'scissior' && computer === 'rock')
+    if (player === 'scissors' && computer === 'rock')
         return 'loss';
 }
     
